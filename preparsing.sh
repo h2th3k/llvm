@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# please name the output dbgs info from compilation as "raw.log"
+# please name the output dbgs info from compilation as "raw.log" e.g. make 2> raw.log
 # split every function related info into a file, then use parse.sh to further parse every file.
 
 
