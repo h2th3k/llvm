@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # please name the output dbgs info from compilation as "raw.log"
-# split every function related info into a file, then use parse.sh to further parse it.
+# split every function related info into a file, then use parse.sh to further parse every file.
 
 
 func_num=$(grep "ASAN processStaticAllocas" raw.log | wc -l)
