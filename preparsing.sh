@@ -4,6 +4,4 @@
 
 func_num=$(grep "ASAN processStaticAllocas" raw.log | wc -l)
 echo "[+] total functions # $func_num"
-
-split_num=$(( func_num / 2 ))
-echo "[+] please paste: csplit raw.log '/ASAN processStaticAllocas/' '{$split_num}'"
+echo "[+] please paste: csplit raw.log '/ASAN processStaticAllocas/' '{$func_num}'"
