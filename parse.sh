@@ -1,6 +1,7 @@
 #!/bin/bash
 
-#get the input list for parsing
+# get the input list for parsing
+# parse the data we will need as function name | buffer number | poison size (without calculating null bytes)
 
 ls xx* > list.txt
 input="./list.txt"
