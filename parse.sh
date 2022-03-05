@@ -9,6 +9,6 @@ echo "[+] file # for parsing: $(wc -l list.txt | awk '{print $1}')"
 
 while IFS= read -r line
 do      
-        echo "$(grep function $line | head -n 1 | grep -o -P '(?<=\<).*(?=\>)') | $(grep buffer $line | wc -l) | $(grep h2th3k $line | awk -F ':' '{print $2}' | sed $
+        echo "$(grep function $line | head -n 1 | grep -o -P '(?<=\<).*(?=\>)') | $(grep buffer $line | wc -l) | $(grep h2th3k $line | awk -F ':' '{print $2}' | sed 's/00//g' | sed 's/\$h2th3k\$//g' | wc -w)"
 
 done < "$input"
